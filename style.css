@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue1: #1a3399;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* HERO SECTION */
+
 .hero {
   position: relative;
 }
@@ -14,16 +25,20 @@
   object-fit: cover;
 }
 
-.hero-content {
+.hero-nav {
   display: flex;
   gap: 150px;
+}
 
+.hero-content {
+  width: fit-content;
+  height: fit-content;
   position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+  margin: auto;
   top: 0;
+  left: 0;
   bottom: 0;
+  right: 0;
 }
 
 .hero-logo {
@@ -32,4 +47,44 @@
 
 .hero-icon {
   width: 42px;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio-header {
+  padding: 100px;
+}
+
+.port-icon {
+  display: block;
+  margin: auto;
+  width: 50px;
+  margin-bottom: 100px;
+}
+
+.port-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 172px;
+  color: var(--blue1);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.port-reflect {
+  margin-top: -87px;
+  margin-bottom: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 172px;
+  color: var(--blue1);
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.25;
+
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
 }
