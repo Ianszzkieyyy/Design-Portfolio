@@ -48,6 +48,11 @@ body {
 
 .hero-icon {
   width: 42px;
+  transition: 0.15s;
+}
+
+.hero-icon:hover {
+  transform: scale(1.5) perspective(1px);
 }
 
 /* PORTFOLIO SECTION */
@@ -56,7 +61,8 @@ body {
   padding: 150px;
 }
 
-.port-icon {
+.port-icon,
+.about-icon {
   display: block;
   margin: auto;
   width: 50px;
@@ -96,8 +102,11 @@ body {
   display: flex;
   gap: 50px;
   align-items: center;
-  padding: 80px;
-  margin-bottom: 80px;
+  margin: 200px 150px 200px 150px;
+}
+
+.proj-itm:last-of-type {
+  margin-bottom: 0;
 }
 
 .proj-left > img,
@@ -109,6 +118,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 92px;
+  text-transform: uppercase;
   line-height: 1em;
   margin-bottom: 36px;
   color: var(--blue1);
@@ -129,4 +139,45 @@ body {
   padding: 24px 32px;
   border: none;
   border-radius: 8px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.proj-btn:hover {
+  background-color: #bb8131;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  padding: 200px;
+  text-align: center;
+}
+
+.about-icon {
+  margin-bottom: 50px;
+}
+
+.about-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  color: var(--blue1);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  text-align-last: center;
+  width: 50%;
+  margin: 0 auto 50px auto;
+}
+
+.about-btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
