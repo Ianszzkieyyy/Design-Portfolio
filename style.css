@@ -6,6 +6,7 @@
 
 :root {
   --blue1: #1a3399;
+  --orange1: #eaa33d;
 }
 
 body {
@@ -52,7 +53,7 @@ body {
 /* PORTFOLIO SECTION */
 
 .portfolio-header {
-  padding: 100px;
+  padding: 150px;
 }
 
 .port-icon {
@@ -87,4 +88,45 @@ body {
   -o-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
+}
+
+/* PROJECTS SECTION */
+
+.proj-itm {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 80px;
+  margin-bottom: 80px;
+}
+
+.proj-left > img,
+.proj-right > img {
+  width: 600px;
+}
+
+.proj-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 92px;
+  line-height: 1em;
+  margin-bottom: 36px;
+  color: var(--blue1);
+}
+
+.proj-desc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+
+.proj-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: var(--orange1);
+  color: white;
+  padding: 24px 32px;
+  border: none;
+  border-radius: 8px;
 }
