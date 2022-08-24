@@ -121,8 +121,35 @@
           <img class="about-btn be" src="assets/svgs/icons8-behance.svg" alt="Behance button" width="50px">
         </div>
       </div>
-      
-      
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-bg">
+        <div class="contact-bg-overlay"></div>
+        <video autoplay muted loop id="contact-vid">
+          <source src="/assets/videos/video-compressed.mp4">
+        </video>
+      </div>
+      <div class="contact-content">
+        <div class="contact-headline">
+          <h2 class="contact-h2">Ready to Work with Us?</h2>
+          <p class="contact-p">If you have any inquiries or questions, please do message us and we'll happily do
+            business with you.</p>
+        </div>
+        <div class="contact-form">
+          <form action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="hidden" name="_subject" value="New submission!">
+            <div>
+              <input type="text" name="firstname" placeholder="First Name" class="form-name" required>
+              <input type="text" name="lastname" placeholder="Last Name" class="form-name" required>
+            </div>
+            <input type="email" name="email" placeholder="Email Address" class="form-inp email" required>
+            <input type="textarea" name="message" placeholder="Your Message" class="form-inp msg" required>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+  
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

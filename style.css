@@ -6,6 +6,7 @@
 
 :root {
   --blue1: #1a3399;
+  --blue2: #10225b;
   --orange1: #eaa33d;
 }
 
@@ -180,4 +181,91 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  position: relative;
+}
+
+.contact-content {
+  display: flex;
+  gap: 48px;
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.contact-headline {
+  color: white;
+  width: 30rem;
+}
+
+.contact-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.contact-p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+}
+
+.contact-form > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25rem;
+}
+
+.contact-form > form > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.form-name {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 50%;
+  padding: 16px;
+  border: none;
+  /* border-radius: 32px; */
+}
+
+.form-inp {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 16px;
+  border: none;
+  /* border-radius: 32px; */
+}
+
+.form-inp + .msg {
+  height: 128px;
+}
+
+.contact-bg {
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-bg-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  background-color: var(--blue2);
+  opacity: 0.8;
+}
+
+#contact-vid {
+  width: 100vw;
 }
