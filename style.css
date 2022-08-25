@@ -8,6 +8,7 @@
   --blue1: #1a3399;
   --blue2: #10225b;
   --orange1: #eaa33d;
+  --dark1: #2d2d2d;
 }
 
 body {
@@ -101,9 +102,10 @@ body {
 
 .proj-itm {
   display: flex;
+  width: 1200px;
   gap: 50px;
   align-items: center;
-  margin: 200px 150px 200px 150px;
+  margin: 200px auto 200px auto;
 }
 
 .proj-itm:last-of-type {
@@ -112,13 +114,13 @@ body {
 
 .proj-left > img,
 .proj-right > img {
-  width: 600px;
+  width: 500px;
 }
 
 .proj-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 92px;
+  font-size: 72px;
   text-transform: uppercase;
   line-height: 1em;
   margin-bottom: 36px;
@@ -191,7 +193,7 @@ body {
 
 .contact-content {
   display: flex;
-  gap: 48px;
+  gap: 64px;
   position: absolute;
   height: fit-content;
   width: fit-content;
@@ -239,18 +241,36 @@ body {
   width: 50%;
   padding: 16px;
   border: none;
-  /* border-radius: 32px; */
+  border-radius: 4px;
 }
 
-.form-inp {
+.form-inp,
+#form-message {
   font-family: "Source Sans Pro", sans-serif;
   padding: 16px;
   border: none;
-  /* border-radius: 32px; */
+  border-radius: 4px;
 }
 
-.form-inp + .msg {
-  height: 128px;
+#form-message {
+  resize: none;
+}
+
+#form-submit {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--orange1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+#form-submit:hover {
+  background-color: #bb8131;
 }
 
 .contact-bg {
@@ -268,4 +288,69 @@ body {
 
 #contact-vid {
   width: 100vw;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background: var(--dark1);
+  padding: 64px;
+}
+
+.footer-content {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+}
+
+.footer-logo {
+  display: flex;
+  align-self: flex-start;
+  gap: 24px;
+}
+
+.footer-home > ul,
+.footer-proj > ul,
+.footer-socials > ul {
+  margin-top: 24px;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-cta {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-h3 {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.footer-btn {
+  padding: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: var(--blue1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.footer-btn:hover {
+  background-color: var(--blue2);
 }
